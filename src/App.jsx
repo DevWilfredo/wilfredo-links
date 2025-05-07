@@ -7,9 +7,9 @@ import { technologies } from './data/technologies';
 
 const App = () => {
   return (
-    <>
+    <main className='animate-pulse-fade-in'>
       <header className="text-white flex flex-col items-center justify-center gap-5 p-4">
-        <img src="/wilfredo2.png" alt="wilfredoDev" className="h-[50vh] object-cover mask-radial-at-center mask-radial-from-45% mask-radial-to-80% animate-pulse-fade-in" />
+        <img src="/wilfredo2.png" alt="wilfredoDev" className="h-[50vh] object-cover mask-radial-at-center mask-radial-from-45% mask-radial-to-80% " />
         <div className='flex flex-col justify-center items-center -mt-4'>
           <span className='text-sky-400 text-xl font-mono px-3 py-1 border border-sky-500/50 rounded-full shadow-sm flex items-center justify-center bg-black/65 cursor-crosshair '>
             @wilfredoDev
@@ -23,7 +23,7 @@ const App = () => {
             Wilfredo Pinto Mata
           </h1>
         </div>
-        <section className="flex gap-3 justify-center items-center">
+        <section className="flex gap-3 justify-center items-center ">
           {socialMedia.map((item) => (
             <SocialMediaBox
               key={item.iconId}
@@ -37,7 +37,7 @@ const App = () => {
           Desarrollador FullStack con experiencia en React, Node.js, Tailwind CSS y tecnologías modernas para construir interfaces elegantes, APIs robustas y experiencias de usuario excepcionales.
         </p>
       </header>
-      <main className="pt-4 text-white pb-6">
+      <div className="pt-4 text-white pb-6">
         <h1 className='text-3x1 font-extrabold leading-tight mt-1 flex justify-center items-center'>
           Tecnologias
         </h1>
@@ -63,8 +63,8 @@ const App = () => {
             <img src={'tech-logos/express-js.svg'} alt="" />
           </button>
         </div>
-      </main>
-    </>
+      </div>
+    </main>
   )
 }
 
